@@ -41,12 +41,12 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 bindsym $mod+b exec pkill -SIGUSR1 waybar
 bindsym $mod+f fullscreen
-bindsym $mod+Shift+z exec grim ~/screenshot.png
+bindsym $mod+Shift+z exec grim -g "$(slurp)" ~/screenshot.png
 bindsym $mod+Shift+p exec pipewire
 bindsym $mod+Shift+b exec zen
 bindsym $mod+Shift+m exec youtube-music
 default_border none
 default_border pixel 0
-exec swww-daemon &
-exec pipewire &
-exec waybar &
+exec swww-daemon
+exec pipewire
+exec waybar
